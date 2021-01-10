@@ -1,2 +1,2 @@
 # uranos
-My first projects
+GDP vs religiosity
