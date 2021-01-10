@@ -8,7 +8,7 @@ df = pd.DataFrame(pd.read_csv(r'C:\Users\jakub\Downloads\religion_vs_GDP_per_Cap
                   ).drop(['Unnamed: 0'], axis=1)
 
 # Generate correlation matrix
-corr = min(df.corr(method='pearson'))
+corr = df.corr(method='pearson')
 
 # Generate chart in seaborn
 xlim = [0, 85000]
