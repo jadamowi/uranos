@@ -2,7 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.DataFrame(pd.read_csv(r'C:\Users\jakub\Downloads\religion_vs_GDP_per_Capita.csv',
+path = input("Please enter a path to the input csv file:\n")
+
+df = pd.DataFrame(pd.read_csv(path,
                               sep=',',
                               index_col='country')
                   ).drop(['Unnamed: 0'], axis=1)
